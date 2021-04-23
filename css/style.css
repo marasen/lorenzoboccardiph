@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(16, 22, 22);
+    margin: 0%;
+}
+header{
+    background-image: url(../images/pexels-aleksandar-pasaric-3310691.jpg);
+    background-size: cover;
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;;
+    padding-top: 10px;
+    
+}
+h1{
+    font-size: 300%;
+    letter-spacing: 20px;
+    
+}
+h2{
+    margin-top: -30px;
+}
+h4{
+    margin-top: -20px;
+}
+
+.container{
+    text-align: right;
+    font-size: 30px;   
+}
+
+.fa-facebook-f{
+    padding: 5px;
+    color: rgb(26, 41, 247);
+}
+.fa-instagram-square{
+    padding: 5px;
+    color: rgb(255, 0, 200);
+}
+.fa-flickr{
+    padding: 5px;
+    color: rgb(255, 24, 93);
+}

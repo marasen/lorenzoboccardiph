@@ -1,42 +1,197 @@
-body{
-    background-color: rgb(16, 22, 22);
-    margin: 0%;
-}
-header{
-    background-image: url(../images/pexels-aleksandar-pasaric-3310691.jpg);
-    background-size: cover;
-    text-align: center;
-    color: black;
-    font-family: 'Roboto', sans-serif;;
-    padding-top: 10px;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     
-}
-h1{
-    font-size: 300%;
-    letter-spacing: 20px;
+    body {
+        margin: 0;
+        padding: 0;
+    }
     
-}
-h2{
-    margin-top: -30px;
-}
-h4{
-    margin-top: -20px;
-}
-
-.container{
-    text-align: right;
-    font-size: 30px;   
-}
-
-.fa-facebook-f{
-    padding: 5px;
-    color: rgb(26, 41, 247);
-}
-.fa-instagram-square{
-    padding: 5px;
-    color: rgb(255, 0, 200);
-}
-.fa-flickr{
-    padding: 5px;
-    color: rgb(255, 24, 93);
-}
+    div.logo {
+        width: 100%;
+        height: 160px;
+        background-image: url(../images/pexels-daniel-absi-952670.jpg);
+        background-size: contain;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        margin: 0%;
+        padding-top: 40px;
+    }
+    
+    h1 {
+        font-size: 100%;
+        letter-spacing: 20px;
+        color: rgb(212, 237, 255);
+        width: 100%;
+        text-shadow: 5px 5px 3px black;
+    }
+    
+    h5 {
+        font-size: 100%;
+        letter-spacing: 10px;
+        color: rgb(215, 239, 255);
+        width: 100%
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        width: 100%;
+        height: 45px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+    }
+    
+    .nav-links li {
+        list-style: none;
+        margin-top: 11px;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+    
+    .nav-links a:hover {
+        color: rgb(116, 167, 180);
+        opacity: 0.7;
+    }
+    
+    .burger {
+        margin-top: 12px;
+        display: none;
+        cursor: pointer;
+    }
+    
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+    
+    .socialtop {
+        position: relative;
+        margin-right: 5px;
+    }
+    
+    .top-social {
+        padding: 10px;
+    }
+    
+    .top-social a {
+        padding: 15px;
+        color: rgb(215, 239, 255);
+        font-size: 20px;
+        line-height: 50%;
+    }
+    
+    .top-social a:hover {
+        color: rgb(116, 167, 180);
+        opacity: 0.7;
+    }
+    
+    footer {
+        background-image: url(../images/pexels-daniel-absi-952670.jpg);
+        background-size: contain;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        height: 160px;
+        text-align: center;
+    }
+    
+    #copy {
+        position: relative;
+        top: 120px;
+    }
+    
+    @media screen and (max-width: 1350px) {
+        body {
+            overflow-x: hidden;
+        }
+        .nav-links {
+            width: 50%;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .nav-links {
+            position: fixed;
+            left: 0;
+            height: 200px;
+            top: 205px;
+            background-color: rgba(30, 34, 37, 0.699);
+            z-index: 2;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transform: translatex(-100%);
+            transition: transform 0.5 ease-in;
+        }
+        .nav-links li {
+            opacity: 0;
+        }
+        .burger {
+            display: block;
+        }
+    }
+    
+    @media screen and (max-width: 620px) {
+        h1 {
+            letter-spacing: 10px;
+        }
+        h5 {
+            letter-spacing: 8px;
+        }
+    }
+    
+    @media screen and (max-width: 435px) {
+        h1 {
+            letter-spacing: 5px;
+        }
+        h5 {
+            letter-spacing: 4px;
+        }
+    }
+    
+    .nav-active {
+        transform: translatex(0%)
+    }
+    
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .toggle .line2 {
+        opacity: 0;
+    }
+    
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }

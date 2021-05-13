@@ -17,21 +17,22 @@
         display: block;
         text-align: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
         margin: 0%;
         padding-top: 40px;
     }
     
     h1 {
         font-size: 100%;
-        letter-spacing: 20px;
-        color: rgb(212, 237, 255);
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 30px;
+        color: rgb(219, 239, 255);
         width: 100%;
-        text-shadow: 5px 5px 3px black;
+        text-shadow: 1px 1px 10px rgb(82, 177, 255);
     }
     
     h5 {
         font-size: 100%;
+        font-family: 'Roboto', sans-serif;
         letter-spacing: 10px;
         color: rgb(215, 239, 255);
         width: 100%
@@ -39,7 +40,7 @@
     
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         background-color: black;
         width: 100%;
@@ -50,7 +51,7 @@
     .nav-links {
         display: flex;
         justify-content: space-around;
-        width: 35%;
+        width: 50%;
     }
     
     .nav-links li {
@@ -72,6 +73,7 @@
     
     .burger {
         margin-top: 12px;
+        margin-left: 5%;
         display: none;
         cursor: pointer;
     }
@@ -85,7 +87,7 @@
     
     .socialtop {
         position: relative;
-        margin-right: 5px;
+        margin-right: 5%;
     }
     
     .top-social {
@@ -94,7 +96,7 @@
     
     .top-social a {
         padding: 15px;
-        color: rgb(215, 239, 255);
+        color: rgb(255, 255, 255);
         font-size: 20px;
         line-height: 50%;
     }
@@ -102,6 +104,10 @@
     .top-social a:hover {
         color: rgb(116, 167, 180);
         opacity: 0.7;
+    }
+    
+    .carousel-inner {
+        background-color: black;
     }
     
     footer {
@@ -117,6 +123,7 @@
     #copy {
         position: relative;
         top: 120px;
+        font-size: 80%;
     }
     
     @media screen and (max-width: 1350px) {
@@ -149,11 +156,14 @@
         .burger {
             display: block;
         }
+        #copy {
+            font-size: 50%;
+        }
     }
     
-    @media screen and (max-width: 620px) {
+    @media screen and (max-width: 800px) {
         h1 {
-            letter-spacing: 10px;
+            letter-spacing: 12px;
         }
         h5 {
             letter-spacing: 8px;
@@ -194,4 +204,24 @@
     
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .about_a {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/cinqusfocata.jpg);
+        background-size: cover;
+    }
+    
+    .descrizione {
+        position: relative;
+        text-align: center;
+        top: 30%;
+        font-size: 150%;
+        color: rgb(255, 223, 176);
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .descrizione p {
+        text-shadow: 5px 5px 5px black;
     }
